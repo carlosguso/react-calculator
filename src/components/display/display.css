@@ -1,0 +1,16 @@
+.display {
+    background: black;
+    color: white;
+    font-size: 5rem;
+    padding: 0.5rem 1rem;
+    text-align: end;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.display p {
+    margin: 0 0 0 auto;
+}

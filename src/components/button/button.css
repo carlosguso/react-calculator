@@ -1,0 +1,49 @@
+Button {
+    border: none;
+    margin: 1rem;
+    padding: 0;
+    flex-basis: 20%;
+    height: 80%;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+Button:hover {
+    cursor: pointer;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.selected {
+    background-color: white;
+    color: orange;
+}
+
+.light {
+    background-color: rgb(54, 51, 51);
+}
+
+.wide {
+    flex-basis: 43%;
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 2.5rem;
+}
+
+@media screen and (min-width: 650px) and (max-width: 1199px) {
+    Button {
+      border-radius: 40px;
+    }
+
+    .wide {
+        border-radius: 40px;
+    }
+}
