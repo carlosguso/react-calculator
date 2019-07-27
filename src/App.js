@@ -5,6 +5,8 @@ import './App.css';
 import Display from "./components/display/display";
 import Panel from "./components/panel/panel";
 
+import getCalc from "./functions";
+
 class App extends Component{
   constructor(props) {
     super(props);
@@ -12,21 +14,22 @@ class App extends Component{
       first: null,
       second: null,
       operation: null,
-      rad: false
+      rad: false,
+      nd: false
     };
   }
 
-  buttonPressed = (name, selected = false) => {
-    //this.setState();
+  buttonPressed = (name) => {
+    //this.setState(this.state, getCalc(name));
     console.log(name);
-    console.log(selected);
   };
   
   render() {
+    console.log(this.state);
     return (
       <div className="App">
-        <Display value={this.state.second || this.state.first || "0"}/>
-        <Panel rad={this.state.rad} clickHandler={this.buttonPressed}/>
+        <Display value={this.state.second || this.state.first || "0"} rad={this.state.rad}/>
+        <Panel rad={this.state.rad} clickHandler={this.buttonPressed} nd={this.state.nd}/>
       </div>
     );
   }

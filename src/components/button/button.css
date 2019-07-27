@@ -8,18 +8,37 @@ Button {
     border-radius: 50%;
     background-color: rgb(20, 20, 20);
     color: white;
+    transition: all 0.5s ease-in-out;
+    outline: none;
 }
 
 Button:hover {
     cursor: pointer;
+    background-color: rgb(70, 69, 69);
 }
 
 .orange {
     background-color: orange;
 }
 
+.orange:hover {
+    background-color: rgb(250, 175, 35);
+}
+
 .gray {
     background-color: gray;
+}
+
+.gray:hover {
+    background-color: rgb(146, 143, 143);
+}
+
+.light {
+    background-color: rgb(54, 51, 51);
+}
+
+.light:hover {
+    background-color: rgb(70, 67, 67);
 }
 
 .selected {
@@ -27,8 +46,8 @@ Button:hover {
     color: orange;
 }
 
-.light {
-    background-color: rgb(54, 51, 51);
+.selected:hover {
+    background-color: rgb(231, 229, 229);
 }
 
 .wide {

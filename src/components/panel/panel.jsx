@@ -7,15 +7,9 @@ import Button from "../button/button";
 
 export default class Panel extends Component {
 
-    constructor(props) {
-        super(props);
 
-        this.btns = [];
-       
-    }
-
-    handleClick = (name, selected = false) => {
-        this.props.clickHandler(name, selected);
+    handleClick = (name) => {
+        this.props.clickHandler(name);
     };
     
     render(){
@@ -25,7 +19,6 @@ export default class Panel extends Component {
                 matches ? this.renderVertical() : this.renderHorizontal()
             }
             </Media>
-           
         );
     }
 
